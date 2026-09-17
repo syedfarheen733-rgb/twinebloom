@@ -12,7 +12,7 @@ import Hero from "./components/Hero";
 import ProductCard from "./components/ProductCard";
 import Footer from "./components/Footer";
 
-import Login from "./pages/Login";
+import Login from "./pages/login";
 import Register from "./pages/Register";
 import Products from "./pages/Products";
 
@@ -122,7 +122,7 @@ function App() {
 
         {/* Login */}
         <Route
-          path="/login"
+          path="/Login"
           element={<Login />}
         />
 
