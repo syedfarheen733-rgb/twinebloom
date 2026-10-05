@@ -1,5 +1,4 @@
 import "./App.css";
-
 import {
   BrowserRouter,
   Routes,
@@ -12,7 +11,7 @@ import Hero from "./components/Hero";
 import ProductCard from "./components/ProductCard";
 import Footer from "./components/Footer";
 
-import Login from "./pages/login";
+import Login from "./pages/Login.jsx";
 import Register from "./pages/Register";
 import Products from "./pages/Products";
 
