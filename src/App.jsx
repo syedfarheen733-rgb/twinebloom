@@ -121,7 +121,7 @@ function App() {
 
         {/* Login */}
         <Route
-          path="/Login"
+          path="/login"
           element={<Login />}
         />
 
@@ -136,7 +136,14 @@ function App() {
 />
 
         {/* Home - Login ayithe matrame */}
-        <Route path="/" element={<Home />} />
+<Route
+  path="/"
+  element={
+    localStorage.getItem("isLoggedIn") === "true"
+      ? <Home />
+      : <Navigate to="/login" />
+  }
+/>
 
       </Routes>
 
